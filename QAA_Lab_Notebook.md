@@ -162,9 +162,9 @@ trim_21_R2.fastq.gz trim_unpaired_21_R2.fastq.gz \
 LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
 ```
 
-Slurm output:
-    Percent of CPU this job got: 216%
-    Elapsed (wall clock) time (h:mm:ss or m:ss): 4:03.42
+Slurm output: \
+    Percent of CPU this job got: 216% \
+    Elapsed (wall clock) time (h:mm:ss or m:ss): 4:03.42 \
     Maximum resident set size (kbytes): 591004
 
 **Number of mapped/unmapped reads**
@@ -207,10 +207,10 @@ Created database and aligned reads to mouse genomic database (refer to star_data
 
 Bash script: htseq_slurm.sh
 
-Slurm output:
-    Percent of CPU this job got: 98%
-    Elapsed (wall clock) time (h:mm:ss or m:ss): 11:54.87
-    Maximum resident set size (kbytes): 175432
+Slurm output: \
+    Percent of CPU this job got: 98% \
+    Elapsed (wall clock) time (h:mm:ss or m:ss): 11:54.87 \
+    Maximum resident set size (kbytes): 175432 \
 
 **Plotting distribution of read lengths of trimmed reads**
 
