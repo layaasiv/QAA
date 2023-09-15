@@ -92,10 +92,10 @@ conda activate QAA
 
 ```
 
-    Slurm output: 
-        Percent of CPU this job got: 99%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 4:06.74
-        Maximum resident set size (kbytes): 40308
+Slurm output: 
+    Percent of CPU this job got: 99%
+    Elapsed (wall clock) time (h:mm:ss or m:ss): 4:06.74
+    Maximum resident set size (kbytes): 40308
 
 === Summary ===
 
@@ -120,10 +120,10 @@ conda activate QAA
 /projects/bgmp/shared/2017_sequencing/demultiplexed/21_3G_both_S15_L008_R2_001.fastq.gz
 ```
 
-    Slurm output: 
-        Percent of CPU this job got: 99%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 4:09.65
-        Maximum resident set size (kbytes): 41960
+Slurm output: 
+    Percent of CPU this job got: 99%
+    Elapsed (wall clock) time (h:mm:ss or m:ss): 4:09.65
+    Maximum resident set size (kbytes): 41960
     
 === Summary ===
 
@@ -141,24 +141,28 @@ Total written (filtered):  1,841,521,110 bp (98.7%)
 
 
 **Running trimmomatic on reads**
-```/usr/bin/time -v trimmomatic PE -threads 20 -phred33 cutadapt_4_R1.fastq.gz \
+```
+/usr/bin/time -v trimmomatic PE -threads 20 -phred33 cutadapt_4_R1.fastq.gz \
 cutadapt_4_R2.fastq.gz \
 trim_4_R1.fastq.gz trim_unpaired_4_R1.fastq.gz \
 trim_4_R2.fastq.gz trim_unpaired_4_R2.fastq.gz \
-LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35```
+LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
+```
 
-    Slurm output: \
-        Percent of CPU this job got: 215% \
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 4:05.58 \
-        Maximum resident set size (kbytes): 592904
+Slurm output: \
+    Percent of CPU this job got: 215% \
+    Elapsed (wall clock) time (h:mm:ss or m:ss): 4:05.58 \
+    Maximum resident set size (kbytes): 592904
 
-```/usr/bin/time -v trimmomatic PE -threads 20 -phred33 cutadapt_21_R1.fastq.gz \
+```
+/usr/bin/time -v trimmomatic PE -threads 20 -phred33 cutadapt_21_R1.fastq.gz \
 cutadapt_21_R2.fastq.gz \
 trim_21_R1.fastq.gz trim_unpaired_21_R1.fastq.gz \
 trim_21_R2.fastq.gz trim_unpaired_21_R2.fastq.gz \
-LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35```
+LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
+```
 
-    Slurm output:
+Slurm output:
     Percent of CPU this job got: 216%
     Elapsed (wall clock) time (h:mm:ss or m:ss): 4:03.42
     Maximum resident set size (kbytes): 591004
