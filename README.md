@@ -98,17 +98,17 @@ Review the [metadata](./metadata) available to you and see if this information l
 
 ## Upload your:
 - [x] lab notebook,
-- [ ] Talapas batch script/code, 
-- [ ] FastQC plots, 
-- [ ] counts files generated from htseq-count (in a folder would be nice),
-- [ ] pdf report (see below), 
-- [ ] and any additional plots, code, or code output
+- [x] Talapas batch script/code, 
+- [x] FastQC plots, 
+- [x] counts files generated from htseq-count (in a folder would be nice),
+- [x] pdf report (see below), 
+- [x] and any additional plots, code, or code output
 
 to GitHub.
     
 ## You should create a pdf file (using Rmarkdown) with a high-level report including:
-- [ ] all plots
-- [ ] answers to questions
-- [ ] mapped/unmapped read counts from PS8 script (in a nicely formatted table)
+- [x] all plots
+- [x] answers to questions
+- [x] mapped/unmapped read counts from PS8 script (in a nicely formatted table)
     
 The three parts of the assignment should be clearly labeled. Be sure to title and write a descriptive figure caption for each image/graph/table you present (*Hint* - think about figure captions you've read and discussed in Journal Club). The file should be named `QAA_report.pdf`, and it should be a the top level of your repo AND submitted to Canvas.
