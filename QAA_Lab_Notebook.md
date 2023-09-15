@@ -23,17 +23,21 @@ Install fastqc on Talapas, using the following code: \
 To run FASTQC on my FASTQC files: \
 ```/usr/bin/time -v fastqc -o fastqc_out -f fastq -extract /projects/bgmp/shared/2017_sequencing/demultiplexed/21_3G_both_S15_L008_R1_001.fastq.gz /projects/bgmp/shared/2017_sequencing/demultiplexed/21_3G_both_S15_L008_R2_001.fastq.gz```
 
+```
 Slurm output: \
     Percent of CPU this job got: 99% \
     Elapsed (wall clock) time (h:mm:ss or m:ss): 3:11.56 \
     Maximum resident set size (kbytes): 290804
+```
 
 Run these fastq files on the demultiplex qscore distribution code to get per-base histograms and compare to FASTQC. [sbatch script here](qscore_dist_demult_sbatch.sh) 
 
+```
 Slurm outputs (all 4 were similar, this was 1 of them): \
     Percent of CPU this job got: 96% \
     Elapsed (wall clock) time (h:mm:ss or m:ss): 2:31.55 \
     Maximum resident set size (kbytes): 72584
+```
 
 ## September 9, 2023
 
@@ -89,13 +93,13 @@ conda activate QAA
 -o cutadapt_4_out.fastq.gz -p cutadapt_4_pair.fastq.gz \
 /projects/bgmp/shared/2017_sequencing/demultiplexed/4_2C_mbnl_S4_L008_R1_001.fastq.gz \
 /projects/bgmp/shared/2017_sequencing/demultiplexed/4_2C_mbnl_S4_L008_R2_001.fastq.gz
-
 ```
-
-Slurm output: 
-    Percent of CPU this job got: 99%
-    Elapsed (wall clock) time (h:mm:ss or m:ss): 4:06.74
+```
+Slurm output: \
+    Percent of CPU this job got: 99% \
+    Elapsed (wall clock) time (h:mm:ss or m:ss): 4:06.74 \
     Maximum resident set size (kbytes): 40308
+```
 
 === Summary ===
 
@@ -119,11 +123,12 @@ conda activate QAA
 /projects/bgmp/shared/2017_sequencing/demultiplexed/21_3G_both_S15_L008_R1_001.fastq.gz \
 /projects/bgmp/shared/2017_sequencing/demultiplexed/21_3G_both_S15_L008_R2_001.fastq.gz
 ```
-
-Slurm output: 
-    Percent of CPU this job got: 99%
-    Elapsed (wall clock) time (h:mm:ss or m:ss): 4:09.65
+```
+Slurm output: \
+    Percent of CPU this job got: 99% \
+    Elapsed (wall clock) time (h:mm:ss or m:ss): 4:09.65 \
     Maximum resident set size (kbytes): 41960
+```
     
 === Summary ===
 
@@ -148,11 +153,12 @@ trim_4_R1.fastq.gz trim_unpaired_4_R1.fastq.gz \
 trim_4_R2.fastq.gz trim_unpaired_4_R2.fastq.gz \
 LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
 ```
-
+```
 Slurm output: \
     Percent of CPU this job got: 215% \
     Elapsed (wall clock) time (h:mm:ss or m:ss): 4:05.58 \
     Maximum resident set size (kbytes): 592904
+```
 
 ```
 /usr/bin/time -v trimmomatic PE -threads 20 -phred33 cutadapt_21_R1.fastq.gz \
@@ -162,10 +168,12 @@ trim_21_R2.fastq.gz trim_unpaired_21_R2.fastq.gz \
 LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
 ```
 
+```
 Slurm output: \
     Percent of CPU this job got: 216% \
     Elapsed (wall clock) time (h:mm:ss or m:ss): 4:03.42 \
     Maximum resident set size (kbytes): 591004
+```
 
 **Number of mapped/unmapped reads**
 
@@ -207,10 +215,12 @@ Created database and aligned reads to mouse genomic database (refer to star_data
 
 Bash script: htseq_slurm.sh
 
+```
 Slurm output: \
     Percent of CPU this job got: 98% \
     Elapsed (wall clock) time (h:mm:ss or m:ss): 11:54.87 \
-    Maximum resident set size (kbytes): 175432 \
+    Maximum resident set size (kbytes): 175432 
+```
 
 **Plotting distribution of read lengths of trimmed reads**
 
