@@ -83,11 +83,14 @@ Number of seq containing adapter: ```zcat 4_2C_mbnl_S4_L008_R2_001.fastq.gz | se
 
 **Running cutadapt on the reads**
 
-```conda activate QAA
+```
+conda activate QAA
 /usr/bin/time -v cutadapt -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT \
 -o cutadapt_4_out.fastq.gz -p cutadapt_4_pair.fastq.gz \
 /projects/bgmp/shared/2017_sequencing/demultiplexed/4_2C_mbnl_S4_L008_R1_001.fastq.gz \
-/projects/bgmp/shared/2017_sequencing/demultiplexed/4_2C_mbnl_S4_L008_R2_001.fastq.gz```
+/projects/bgmp/shared/2017_sequencing/demultiplexed/4_2C_mbnl_S4_L008_R2_001.fastq.gz
+
+```
 
     Slurm output: 
         Percent of CPU this job got: 99%
@@ -109,11 +112,13 @@ Total written (filtered):  1,855,605,260 bp (99.1%)
   Read 2:   927,649,262 bp
 
 
-```conda activate QAA
+```
+conda activate QAA
 /usr/bin/time -v cutadapt -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT \
 -o cutadapt_21_R1.fastq.gz -p cutadapt_21_R2.fastq.gz \
 /projects/bgmp/shared/2017_sequencing/demultiplexed/21_3G_both_S15_L008_R1_001.fastq.gz \
-/projects/bgmp/shared/2017_sequencing/demultiplexed/21_3G_both_S15_L008_R2_001.fastq.gz```
+/projects/bgmp/shared/2017_sequencing/demultiplexed/21_3G_both_S15_L008_R2_001.fastq.gz
+```
 
     Slurm output: 
         Percent of CPU this job got: 99%
