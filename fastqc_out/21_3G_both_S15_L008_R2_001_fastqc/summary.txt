@@ -1,0 +1,12 @@
+PASS	Basic Statistics	21_3G_both_S15_L008_R2_001.fastq.gz
+PASS	Per base sequence quality	21_3G_both_S15_L008_R2_001.fastq.gz
+FAIL	Per tile sequence quality	21_3G_both_S15_L008_R2_001.fastq.gz
+PASS	Per sequence quality scores	21_3G_both_S15_L008_R2_001.fastq.gz
+WARN	Per base sequence content	21_3G_both_S15_L008_R2_001.fastq.gz
+PASS	Per sequence GC content	21_3G_both_S15_L008_R2_001.fastq.gz
+PASS	Per base N content	21_3G_both_S15_L008_R2_001.fastq.gz
+PASS	Sequence Length Distribution	21_3G_both_S15_L008_R2_001.fastq.gz
+WARN	Sequence Duplication Levels	21_3G_both_S15_L008_R2_001.fastq.gz
+WARN	Overrepresented sequences	21_3G_both_S15_L008_R2_001.fastq.gz
+PASS	Adapter Content	21_3G_both_S15_L008_R2_001.fastq.gz
+FAIL	Kmer Content	21_3G_both_S15_L008_R2_001.fastq.gz
